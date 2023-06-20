@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas Mandiri 6</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+<!-- Membuat paragraf menjadi 3 -->
+<body>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+       debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+       maiores in?</p>         
+<!-- Membuat warna RGB di setiap baris -->
+    <script>
+        const paragraphs = document.querySelectorAll('.paragraf');
+
+        function animateColor(element, color) {
+            let currentColor = null;
+
+            function toggleColor() {
+                element.style.color = (currentColor === color) ? '' : color;
+                currentColor = element.style.color;
+            }
+<!-- Ubah nilai 500 untuk mengatur kecepatan animasi -->
+            setInterval(toggleColor, 500); 
+        }
+
+        paragraphs.forEach((paragraph, index) => {
+            const color = (index === 0) ? 'red' : (index === 1) ? 'green' : 'blue';
+            animateColor(paragraph, color);
+        });
+    </script>
+</body>
+
+</html>
