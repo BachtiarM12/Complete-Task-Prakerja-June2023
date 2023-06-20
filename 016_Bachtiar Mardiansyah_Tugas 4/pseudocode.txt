@@ -1,0 +1,18 @@
+-CALCULATE CIRCLE AREA-
+
+STORE "phi" with value of phi (3.14)
+STORE "radius" with any value
+STORE "area" without value
+CALCULATE "phi" times "radius" squared
+SET "area" with calculated result
+DISPLAY "area"
+
+============================
+-CALCULATE CIRCUMFERENCE OF CIRCLE-
+
+ STORE "phi" with value of phi (3.14)
+ STORE "radius" with any value
+ STORE "circumference" without value
+ CALCULATE "2" times "phi" times "radius"
+ SET "circumference" with calculated result
+ DISPLAY "circumference"
